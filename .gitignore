@@ -1,0 +1,22 @@
+# Logs
+*.log
+/tmp/
+
+# Build artifacts
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Sensitive data - NEVER commit SIM card provisioning data
+sim_credentials.txt
+*.csv
+provisioning_email.txt

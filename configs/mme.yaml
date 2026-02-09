@@ -1,0 +1,44 @@
+# Open5GS MME Configuration for Private LTE Network
+# Full config: /etc/open5gs/mme.yaml (installed by apt)
+# Only the sections below need modification from defaults.
+#
+# IMPORTANT: This is NOT a complete mme.yaml file.
+# After installing Open5GS, edit /etc/open5gs/mme.yaml and
+# modify only the sections shown below.
+
+# --- Modify these sections in /etc/open5gs/mme.yaml ---
+
+logger:
+  file:
+    path: /var/log/open5gs/mme.log
+  level: debug    # Use 'info' for production, 'debug' for troubleshooting
+
+mme:
+  freeDiameter: /etc/freeDiameter/mme.conf
+  s1ap:
+    server:
+      - address: 127.0.0.2
+  gtpc:
+    server:
+      - address: 127.0.0.2
+  metrics:
+    server:
+      - address: 127.0.0.2
+        port: 9090
+  gummei:
+    - plmn_id:
+        mcc: 999
+        mnc: 70
+      mme_gid: 2
+      mme_code: 1
+  tai:
+    - plmn_id:
+        mcc: 999
+        mnc: 70
+      tac: 1              # MUST match tac in rr.conf (0x0001 = 1)
+  security:
+    integrity_order : [ EIA2, EIA1, EIA0 ]
+    ciphering_order : [ EEA0, EEA1, EEA2 ]
+  network_name:
+    full: Open5GS         # This name appears on the phone
+  mme_name: open5gs-mme0

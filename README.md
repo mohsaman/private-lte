@@ -96,8 +96,8 @@ The network operates on **Band 7 (2600 MHz)** with **5 MHz bandwidth (25 PRBs)**
 
 | Item | Model / Spec | Approx. Cost | Notes |
 |------|-------------|-------------|-------|
-| Software Defined Radio | [Ettus USRP B210](https://www.ettus.com/all-products/ub210-kit/) | ~$1,500 | Dual-channel, 70 MHz – 6 GHz, USB 3.0 |
-| Antennas (x2) | Ettus VERT2450 (included with B210) | Included | 2.4–2.5 GHz vertical. Works on Band 7 (2600 MHz) |
+| Software Defined Radio | USRP B210 | ~$500 | Dual-channel, 70 MHz – 6 GHz, USB 3.0 |
+| Antennas (x2) | VERT2450 (included with B210) | Included | 2.4–2.5 GHz vertical. Works on Band 7 (2600 MHz) |
 | SIM Cards | [sysmoISIM-SJA5 10-pack](https://shop.sysmocom.de/sysmoISIM-SJA5/) | ~€40 | Programmable USIM/ISIM. Comes with Ki/OPc/ADM keys |
 | SIM Card Reader | SCM SCR 3310 (or any PC/SC reader) | ~$15 | USB smart card reader for SIM programming |
 | Linux PC / Laptop | Intel i5+ with USB 3.0 | — | AVX2 support strongly recommended |
@@ -122,7 +122,7 @@ The included VERT2450 antennas work on Band 7 but are optimized for 2.4 GHz WiFi
 
 | Antenna | Frequency Range | Gain | Best For |
 |---------|----------------|------|----------|
-| Ettus VERT900 | 824–960 MHz, 1710–1990 MHz | 3 dBi | Band 5 (850 MHz) |
+| VERT900 | 824–960 MHz, 1710–1990 MHz | 3 dBi | Band 5 (850 MHz) |
 | 700-2700 MHz Omni Whip | 700 MHz – 2.7 GHz | 3 dBi | Wideband LTE |
 | Nooelec UWB Surveyor | 700 MHz – 10 GHz | 3 dBi | Ultra-wideband testing |
 
@@ -746,7 +746,6 @@ private-lte-network/
 - [srsRAN](https://www.srsran.com/) — Open-source LTE/5G radio suite
 - [Open5GS](https://open5gs.org/) — Open-source 5G core and EPC
 - [sysmocom](https://sysmocom.de/) — Programmable SIM cards
-- [Ettus Research](https://www.ettus.com/) — USRP SDR hardware
 - [pySim](https://gitea.osmocom.org/sim-card/pysim) — SIM card programming
 - [Osmocom](https://osmocom.org/) — Open source mobile communications
 

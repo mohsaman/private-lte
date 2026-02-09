@@ -98,7 +98,7 @@ fi
 # --- USRP B210 ---
 echo ""
 echo -e "${YELLOW}USRP B210${NC}"
-if lsusb 2>/dev/null | grep -qi "ettus\|2500:002"; then
+if lsusb 2>/dev/null | grep -qi "2500:002"; then
   check "USRP B210 detected on USB" "ok"
 else
   check "USRP B210" "not detected — check USB 3.0 connection"
